@@ -1,0 +1,21 @@
+<div class="product-listing">
+    <!-- Loop through each product in the product array -->
+    <div class="product-card" *ngFor="let product of product">
+        <!-- Display the product image -->
+        <img [src]="product.imageUrl" alt="Product Image" class="product-image">
+        
+        <!-- Display the product name -->
+        <h3>{{ product.name }}</h3>
+        
+        <!-- Display the product description -->
+        <p>{{ product.description }}</p>
+        
+        <!-- Display the product price formatted as currency -->
+        <p><strong>{{ product.price | currency }}</strong></p>
+        
+        <!-- Button to view details of the product, triggers the viewProductDetails method -->
+        <button (click)="viewProductDetails(product.id)">View Details</button>
+    </div>
+</div>
+
+  

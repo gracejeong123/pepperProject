@@ -1,0 +1,62 @@
+/* Main container for the About Us page */
+.about-page {
+    padding: 2rem; /* Add padding around the content */
+    background-color: #f8f5f1; /* Light background color */
+    font-family: 'Courier New', monospace; /* Use monospace font */
+}
+
+/* Hero section styling */
+.hero-section {
+    text-align: center; /* Center align text within the hero section */
+    background: url('/assets/about-background.jpg') no-repeat center center/cover; /* Background image with cover fit */
+    color: rgb(248, 202, 202); /* Text color for the hero section */
+    padding: 4rem 2rem; /* Add padding inside the hero section */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 2rem; /* Space below the hero section */
+}
+
+/* Heading style within the hero section */
+.hero-section h1 {
+    font-size: 2.5rem; /* Larger font size for main title */
+    margin: 0; /* Remove default margin */
+}
+
+/* Paragraph style within the hero section */
+.hero-section p {
+    font-size: 1.25rem; /* Font size for subtitle */
+}
+
+/* Margin for sections */
+.mission, .team, .contact-info {
+    margin-bottom: 2rem; /* Space below each section */
+}
+
+/* Heading style for sections */
+.mission h2, .team h2, .contact-info h2 {
+    font-size: 2rem; /* Font size for section headings */
+    margin-bottom: 1rem; /* Space below section headings */
+}
+
+/* Team member styling */
+.team-member {
+    margin-bottom: 1rem; /* Space below each team member */
+}
+
+/* Heading style for team members */
+.team-member h3 {
+    font-size: 1.5rem; /* Font size for team member names */
+    margin: 0.5rem 0; /* Margin above and below names */
+}
+
+/* Styling for links in contact info */
+.contact-info a {
+    color: #e9765b; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Underline links on hover */
+.contact-info a:hover {
+    text-decoration: underline; /* Underline links when hovered */
+}
+
+  

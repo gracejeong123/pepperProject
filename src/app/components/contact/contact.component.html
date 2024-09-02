@@ -1,0 +1,39 @@
+<div class="contact-page">
+    <!-- Page heading -->
+    <h2>Contact Us</h2>
+    <!-- Introduction paragraph encouraging users to reach out -->
+    <p>If you have any questions, feel free to reach out to us:</p>
+    
+    <!-- Contact information section -->
+    <div class="contact-info">
+      <!-- Email contact information, using Angular interpolation to insert the email address from the component -->
+      <p><strong>Email:</strong> <a href="mailto:{{ contactDetails.email }}">{{ contactDetails.email }}</a></p>
+      <!-- Phone contact information, using Angular interpolation to insert the phone number from the component -->
+      <p><strong>Phone:</strong> <a href="tel:{{ contactDetails.phone }}">{{ contactDetails.phone }}</a></p>
+    </div>
+  
+    <!-- Contact form section for users to send a message -->
+    <div class="contact-form">
+      <!-- Subheading for the form -->
+      <h3>Send us a message:</h3>
+      <!-- Form for collecting user details and their message -->
+      <form>
+        <!-- Label and input field for the user's name -->
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required>
+  
+        <!-- Label and input field for the user's email -->
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" required>
+  
+        <!-- Label and textarea for the user's message -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+  
+        <!-- Submit button for the form -->
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  

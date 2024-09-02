@@ -1,0 +1,45 @@
+<!-- src/app/components/navbar/navbar.component.html -->
+
+<!-- Container for the logo -->
+<div class="logo-container">
+    <!-- Logo is set as a background image in CSS -->
+  </div>
+  
+  <!-- Navigation bar container -->
+  <nav class="navbar">
+    
+    <!-- Brand logo link, navigates to the home page -->
+    <a class="navbar-brand" routerLink="/"></a>
+    
+    <!-- Navigation links -->
+    <ul class="nav">
+      <!-- Home link with routerLink for navigation and routerLinkActive to apply active class when selected -->
+      <a class="nav-link" routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+      
+       <!-- About link with routerLink for navigation and routerLinkActive to apply active class when selected -->
+       <a class="nav-link" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
+
+      <!-- Contact link with routerLink for navigation and routerLinkActive to apply active class when selected -->
+      <a class="nav-link" routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
+      
+     
+    </ul>
+    
+    <!-- Container for the search bar -->
+    <div class="search-bar-container">
+      
+      <!-- Search bar input and button -->
+      <div class="search-bar">
+        <!-- Input field for typing search queries -->
+        <input type="text" placeholder="Search products...">
+        
+        <!-- Button to trigger the search action -->
+        <button>Search</button>
+      </div>
+    </div>
+  </nav>
+  
+  
+
+  
+  

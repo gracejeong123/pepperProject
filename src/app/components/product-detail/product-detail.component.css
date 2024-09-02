@@ -1,0 +1,166 @@
+/* Style for the product detail container, aligning images and product info side by side */
+.product-detail {
+    display: flex; /* Align images and product info side by side */
+    padding: 1rem;
+    background-color: #f8f5f1;
+    font-family: 'Courier New', monospace;
+}
+
+/* Container for product images, including the main image and thumbnails */
+.product-images {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align images to the left */
+    margin-right: 2rem; /* Space between images and product info */
+}
+
+/* Style for the main product image */
+.main-image {
+    max-width: 300px; /* Adjusted size of the main image */
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Container for thumbnail images, stacked vertically */
+.thumbnail-images {
+    display: flex;
+    flex-direction: column; /* Stack thumbnails vertically */
+    gap: 0.5rem; /* Space between thumbnails */
+}
+
+/* Style for thumbnail images */
+.thumbnail {
+    width: 80px; /* Adjusted size of the thumbnails */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Container for product information, allowing it to take up remaining space */
+.product-info {
+    flex: 1; /* Allow product info to take up remaining space */
+}
+
+/* Style for product name */
+.product-info h1 {
+    font-size: 2rem;
+}
+
+/* Style for product price */
+.product-info .price {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* Style for product rating */
+.product-info .rating {
+    margin: 1rem 0;
+}
+
+/* Style for product specifications */
+.product-info .product-specs {
+    text-align: left;
+    margin: 2rem 0;
+}
+
+/* Style for product specifications list */
+.product-info .product-specs ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style for each product specification item */
+.product-info .product-specs li {
+    margin-bottom: 0.5rem;
+}
+
+/* Style for Add to Cart and Buy Now buttons */
+.product-info .add-to-cart, .product-info .buy-now {
+    background-color: #e9765b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+/* Hover effect for Add to Cart and Buy Now buttons */
+.product-info .add-to-cart:hover, .product-info .buy-now:hover {
+    background-color: #3f5431;
+}
+
+/* Style for reviews section */
+.reviews {
+    margin-top: 2rem;
+}
+
+/* Style for review form container */
+.review-form {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Style for review form labels */
+.review-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Style for review form inputs, textareas, and selects */
+.review-form input, 
+.review-form textarea, 
+.review-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Style for review form submit button */
+.review-form button {
+    background-color: #e9765b;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for review form submit button */
+.review-form button:hover {
+    background-color: #3f5431;
+}
+
+/* Style for review list container */
+.review-list {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for individual review items */
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+/* Remove border-bottom for the last review item */
+.review:last-child {
+    border-bottom: none;
+}
+
+/* Style for review headings */
+.review h4 {
+    margin: 0 0 0.5rem 0;
+}
+
+/* Style for review paragraphs */
+.review p {
+    margin: 0;
+}

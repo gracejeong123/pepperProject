@@ -1,0 +1,113 @@
+/* Logo container styling */
+.logo-container {
+    height: 400px; /* Adjust height for larger logo */
+    width: 100%; /* Full width of the container */
+    background-image: url('/assets/logo.png'); /* Path to the logo image */
+    background-size: auto; /* Ensure the logo fits within the container */
+    background-repeat: no-repeat; /* Prevent the logo from repeating */
+    background-position: center; /* Center the logo within the container */
+    margin-bottom: 5px; /* Space between the logo and the navbar */
+    background-color: #f8f5f1; /* Background color of the logo container */
+}
+  
+/* Navbar styling */
+.navbar {
+    background-color: #f8f5f1; /* Background color of the navbar */
+    padding: 10px 20px; /* Padding around navbar items */
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space between logo and navigation links */
+    align-items: center; /* Center items vertically within the navbar */
+    padding: 0 20px; /* Padding on left and right */
+}
+
+/* Navbar brand/logo styling */
+.navbar .navbar-brand {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center brand/logo vertically */
+}
+
+/* Navigation list styling */
+.nav {
+    list-style-type: none; /* Remove default list styling */
+    display: flex; /* Align navigation items horizontally */
+    gap: 1.5rem; /* Space between navigation items */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Navigation link styling */
+.nav-link {
+    color: rgb(63, 84, 49); /* Text color for navigation links */
+    font-weight: bold; /* Bold font weight for emphasis */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 14px; /* Font size */
+    padding: 5px 10px; /* Padding around the link text */
+    font-family: 'Courier New', monospace; /* Monospace font for a retro look */
+}
+
+/* Individual navigation item styling */
+.nav-item {
+    margin: 0; /* Remove or reduce margin */
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+    text-decoration: underline; /* Underline the link text on hover */
+}
+
+/* Search bar container styling */
+.search-bar-container {
+    display: flex; /* Align the search bar horizontally */
+    align-items: center; /* Center the search bar vertically */
+}
+
+/* Search bar input and button container */
+.search-bar {
+    display: flex; /* Align search bar elements (input and button) horizontally */
+    gap: 0.5rem; /* Space between the input field and the button */
+}
+
+/* Input field styling */
+.search-bar input {
+    padding: 0.5rem; /* Padding inside the input field */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light gray border */
+    font-family: 'Courier New', monospace; /* Monospace font for the input text */
+}
+
+/* Search button styling */
+.search-bar button {
+    background-color: #e9765b; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 0.5rem 1rem; /* Padding around the button text */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-family: 'Courier New', monospace; /* Monospace font for button text */
+}
+
+/* Hover effect for search button */
+.search-bar button:hover {
+    background-color: #e55d00; /* Darker color on hover */
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically on small screens */
+    align-items: flex-start; /* Align items to the start of the navbar */
+  }
+
+  .search-bar-container {
+    margin-top: 10px; /* Space above the search bar */
+  }
+
+  .nav {
+    flex-direction: column; /* Stack navigation items vertically */
+    width: 100%; /* Full width of the container */
+  }
+
+  .nav-item {
+    margin: 5px 0; /* Space between navigation items */
+  }
+}

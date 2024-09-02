@@ -1,0 +1,54 @@
+<div class="product-detail">
+    <!-- Container for product images, including the main image and thumbnails -->
+    <div class="product-images">
+      
+      <!-- Main product image -->
+      <img [src]="product.imageUrl" alt="Product Image" class="main-image">
+      
+      <!-- Container for thumbnail images -->
+      <div class="thumbnail-images">
+        <!-- Loop through each thumbnail and display them -->
+        <img [src]="thumb" alt="Product Thumbnail" class="thumbnail" *ngFor="let thumb of product.thumbnails">
+      </div>
+    </div>
+    
+    <!-- Container for product information -->
+    <div class="product-info">
+      <!-- Product name -->
+      <h1>{{ product.name }}</h1>
+      
+      <!-- Product price with currency pipe -->
+      <p class="price">{{ product.price | currency }}</p>
+      
+      <!-- Product rating -->
+      <p class="rating">
+        <span>★★★★☆</span> (4.5/5 based on 100 reviews)
+      </p>
+      
+      <!-- Product specifications -->
+      <div class="product-specs">
+        <h3>Product Specifications:</h3>
+        <ul>
+          <li>Specification 1</li>
+          <li>Specification 2</li>
+          <!-- Add more specs here -->
+        </ul>
+      </div>
+      
+      <!-- Reviews section -->
+      <div class="reviews">
+        <h3>Reviews:</h3>
+        <!-- Loop through each review and display it -->
+        <div *ngFor="let review of reviews">
+          <p><strong>{{ review.reviewerName }}</strong> (Rating: {{ review.reviewRating }}/5)</p>
+          <p>{{ review.reviewText }}</p>
+        </div>
+      </div>
+      
+      <!-- Buttons to add to cart or buy now -->
+      <button class="add-to-cart" (click)="addToCart()">Add to Cart</button>
+      <button class="buy-now" (click)="buyNow()">Buy Now</button>
+    </div>
+  </div>
+
+  

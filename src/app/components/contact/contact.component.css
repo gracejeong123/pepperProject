@@ -1,0 +1,61 @@
+/* Styles for the main contact page container */
+.contact-page {
+    padding: 2rem; /* Adds padding around the entire contact page */
+    background-color: #f8f5f1; /* Light background color for the page */
+    font-family: 'Courier New', monospace; /* Sets the font for the page */
+}
+
+/* Styles for the contact information section */
+.contact-info {
+    margin-bottom: 2rem; /* Adds space below the contact info section */
+}
+
+/* Styles for links in the contact info section */
+.contact-info a {
+    color: #e9765b; /* Link color (a shade of orange) */
+    text-decoration: none; /* Removes the underline from links */
+}
+
+/* Styles for links when hovered */
+.contact-info a:hover {
+    text-decoration: underline; /* Adds an underline on hover */
+}
+
+/* Styles for the contact form container */
+.contact-form {
+    background-color: #fff; /* White background for the form */
+    padding: 1rem; /* Padding inside the form container */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styles for labels inside the contact form */
+.contact-form label {
+    display: block; /* Makes the label take up the full width */
+    margin-bottom: 0.5rem; /* Space below each label */
+}
+
+/* Styles for input fields and the textarea inside the contact form */
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width of the form container */
+    padding: 0.5rem; /* Padding inside input fields and textarea */
+    margin-bottom: 1rem; /* Space below each input/textarea */
+    border-radius: 4px; /* Rounded corners for input fields and textarea */
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+/* Styles for the submit button inside the contact form */
+.contact-form button {
+    background-color: #e9765b; /* Button background color (orange) */
+    color: #fff; /* White text color */
+    border: none; /* Removes the default border */
+    padding: 0.5rem 1rem; /* Padding inside the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Styles for the submit button when hovered */
+.contact-form button:hover {
+    background-color: #3f5431; /* Darker green background on hover */
+}
