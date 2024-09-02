@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common'; // Import CommonModule
 
+
 interface Review {
   reviewerName: string;
   reviewText: string;
@@ -28,7 +29,10 @@ export class ProductDetailComponent implements OnInit {
       'assets/product/product1.jpeg',
       'assets/product/product2.jpeg',
       'assets/product/product3.jpeg'
-    ]
+    ],
+    likes: 120, // Example number of likes
+    sellerName: 'John Doe', // Example seller name
+    sellerDescription: 'Experienced seller with a wide range of quality products.' // Example seller description
   };
 
   reviews: Review[] = [];
@@ -55,6 +59,7 @@ export class ProductDetailComponent implements OnInit {
     // Logic to proceed with the purchase of the product
     console.log('Buy now:', this.product);
   }
+
 
   submitReview() {
     // Add new review to the reviews array

@@ -44,34 +44,55 @@
 /* Style for product name */
 .product-info h1 {
     font-size: 2rem;
+    color: rgb(63, 84, 49);
 }
 
 /* Style for product price */
 .product-info .price {
     font-size: 1.5rem;
     margin: 1rem 0;
+    color: #e9765b;
 }
 
 /* Style for product rating */
 .product-info .rating {
     margin: 1rem 0;
+    color: rgb(63, 84, 49);
 }
 
+.product-detail .seller-info {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f8f5f1;
+    color: rgb(63, 84, 49);
+  }
+  
+  .product-detail .seller-info h2 {
+    margin-bottom: 1rem;
+    color: rgb(63, 84, 49);
+  }
+  
 /* Style for product specifications */
 .product-info .product-specs {
     text-align: left;
     margin: 2rem 0;
+    color: rgb(63, 84, 49);
+    padding: 1rem;
 }
 
 /* Style for product specifications list */
 .product-info .product-specs ul {
     list-style: none;
-    padding: 0;
+    padding: 1rem;
+    
 }
 
 /* Style for each product specification item */
 .product-info .product-specs li {
     margin-bottom: 0.5rem;
+    color: rgb(63, 84, 49); 
+    padding: 1rem;
 }
 
 /* Style for Add to Cart and Buy Now buttons */
@@ -90,9 +111,16 @@
     background-color: #3f5431;
 }
 
+/* Style for detailed product description */
+.product-description {
+    margin-top: 2rem;
+    color: rgb(63, 84, 49); /* Change font color for product description */
+}
+
 /* Style for reviews section */
 .reviews {
     margin-top: 2rem;
+    color: rgb(63, 84, 49);
 }
 
 /* Style for review form container */
@@ -102,12 +130,14 @@
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 2rem;
+    color: rgb(63, 84, 49);
 }
 
 /* Style for review form labels */
 .review-form label {
     display: block;
     margin-bottom: 0.5rem;
+    color: rgb(63, 84, 49);
 }
 
 /* Style for review form inputs, textareas, and selects */
@@ -148,6 +178,7 @@
 .review {
     border-bottom: 1px solid #ddd;
     padding: 1rem 0;
+    color: rgb(63, 84, 49);
 }
 
 /* Remove border-bottom for the last review item */
@@ -158,9 +189,11 @@
 /* Style for review headings */
 .review h4 {
     margin: 0 0 0.5rem 0;
+    color: rgb(63, 84, 49);
 }
 
 /* Style for review paragraphs */
 .review p {
     margin: 0;
+    color: rgb(63, 84, 49);
 }

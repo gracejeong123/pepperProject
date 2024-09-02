@@ -9,7 +9,7 @@
 .hero-section {
     text-align: center; /* Center align text within the hero section */
     background: url('/assets/about-background.jpg') no-repeat center center/cover; /* Background image with cover fit */
-    color: rgb(248, 202, 202); /* Text color for the hero section */
+    color: rgb(63, 84, 49); /* Text color for the hero section */
     padding: 4rem 2rem; /* Add padding inside the hero section */
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 2rem; /* Space below the hero section */
@@ -19,11 +19,13 @@
 .hero-section h1 {
     font-size: 2.5rem; /* Larger font size for main title */
     margin: 0; /* Remove default margin */
+   
 }
 
 /* Paragraph style within the hero section */
 .hero-section p {
     font-size: 1.25rem; /* Font size for subtitle */
+    
 }
 
 /* Margin for sections */
@@ -35,6 +37,7 @@
 .mission h2, .team h2, .contact-info h2 {
     font-size: 2rem; /* Font size for section headings */
     margin-bottom: 1rem; /* Space below section headings */
+    color: rgb(63, 84, 49);
 }
 
 /* Team member styling */

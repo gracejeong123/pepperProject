@@ -3,6 +3,7 @@
     padding: 2rem; /* Adds padding around the entire contact page */
     background-color: #f8f5f1; /* Light background color for the page */
     font-family: 'Courier New', monospace; /* Sets the font for the page */
+    color: rgb(63, 84, 49);
 }
 
 /* Styles for the contact information section */

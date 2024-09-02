@@ -1,21 +1,38 @@
-<div class="product-listing">
-    <!-- Loop through each product in the product array -->
-    <div class="product-card" *ngFor="let product of product">
-        <!-- Display the product image -->
-        <img [src]="product.imageUrl" alt="Product Image" class="product-image">
-        
-        <!-- Display the product name -->
-        <h3>{{ product.name }}</h3>
-        
-        <!-- Display the product description -->
-        <p>{{ product.description }}</p>
-        
-        <!-- Display the product price formatted as currency -->
-        <p><strong>{{ product.price | currency }}</strong></p>
-        
-        <!-- Button to view details of the product, triggers the viewProductDetails method -->
-        <button (click)="viewProductDetails(product.id)">View Details</button>
+<!-- src/app/product-list/product-list.component.html -->
+
+<div class="product-listing-container">
+  <!-- Sorting Controls -->
+  <div class="sorting-controls">
+    <label for="sort">Sort by:</label>
+    <select id="sort" (change)="onSortChange($event)">
+      <option value="name">Name</option>
+      <option value="priceAsc">Price: Low to High</option>
+      <option value="priceDesc">Price: High to Low</option>
+      <option value="reviews">Most Reviews</option>
+      <option value="likes">Most Likes</option>
+    </select>
+  </div>
+  
+  <!-- Product Listing Grid -->
+  <div class="product-listing">
+    <!-- Loop through each product in the sortedProducts array -->
+    <div class="product-card" *ngFor="let product of sortedProducts">
+      <!-- Display the product image -->
+      <img [src]="product.imageUrl" alt="Product Image" class="product-image">
+  
+      <!-- Display the product name -->
+      <h3>{{ product.name }}</h3>
+  
+      <!-- Display the product description -->
+      <p>{{ product.description }}</p>
+  
+      <!-- Display the product price formatted as currency -->
+      <p><strong>{{ product.price | currency }}</strong></p>
+  
+      <!-- Button to view details of the product, triggers the viewProductDetails method -->
+      <button (click)="viewProductDetails(product.id)">View Details</button>
     </div>
+  </div>
 </div>
 
-  
+
